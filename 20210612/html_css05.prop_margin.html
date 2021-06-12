@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_css05.prop_margin.html</title>
+    <style>
+        p{border: 1px solid black; }
+        /* 몇몇 요소는 기본적으로 마진이 들어가있다. */
+        section{background: greenyellow; border: 1px solid black;}
+        p.child_p{background-color: hotpink; margin: 10px 50px 40px 15px;}
+        div{width: 300px; background-color: tomato; margin: 0 auto} /*상하 : 0 좌우는 자동 */ /* 상하는 margin auto 가 안된다 */
+        
+    </style>
+</head>
+<body>
+    <h1>요소와 요소 사이의 여백</h1>
+    <h3>요소의 바깥쪽 여백</h3>
+    <p>p요소1</p>
+    <p>p요소2</p>
+    <hr>
+    마진의 겹침현상<br>
+    <ul>
+        <li>두 블럭이 위 아래로 겹쳤을 때</li>
+        <li>두 블럭이 부모 자식으로 겹쳐있을 때</li>
+    </ul>
+    <section>
+        <p class="child_p">자식</p>
+    </section>
+
+    <div>좌우 가운데 정렬</div> 
+    <!-- /* 상하는 margin auto 가 안된다 */ -->
+    
+
+</body>
+</html>

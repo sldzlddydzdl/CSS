@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_css04.prop_border.html</title>
+    <style>
+        div{width:200px; height: 200px}
+        div.bd_red{
+            border-color: red;
+            border-style: solid;
+            border-width: 1px;
+        }
+        /*상 우 하 좌를 따로 적용할 수 있다.*/
+        div.bd_difference{
+            /*상 우 하 좌  [ 시계방향 ] */
+            border-color: red orange yellow green;
+            /*상 좌우 하 */
+            border-style: dotted double dashed;
+            /*상하 좌우*/
+            border-width: 15px 50px;
+        }
+        div.bd_radius{
+            border: 3px solid black;
+            border-radius: 10px 20px 10px 20px;
+        }
+
+        div.shorthand{ border: 3px dashed orange; }
+    </style>
+</head>
+<body>
+    <h1>테두리의 모양을 꾸미는 아이</h1>
+    <div class="bd_red"></div>
+    <br>
+    <div class="bd_difference"></div>
+    <br>
+    <div class="shorthand"></div>
+    <br>
+    <div class="bd_radius">테두리를 둥글게 둥글게 ~</div>
+
+
+</body>
+</html>
