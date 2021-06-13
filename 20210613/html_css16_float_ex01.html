@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_css16_float_ex01.html</title>
+    <style>
+        section{border: 2px dashed red;}
+        article{width: 100px; height: 50px; float: left;}
+        article.ex01{background: red; float: left}
+        article.ex02{background: orange; float: left}
+        article.ex03{background: yellow; float: left}
+        article.ex04{background: green; float: left}
+        article.ex05{background: blue; float: left;}
+        /* p.ex06{clear: both;} : clear both를 하기위해 마지막 자식에 효과를 넣음*/
+
+        /*css 로만 이용하여 claer:both 효과를 주자. */
+        section::after{content: ""; display: block; clear: both}
+        /* content로 빈값을 주고 display 로 높이를 주고 clear: both 을 해준다. */
+
+        div{width: 500px; border: 1px solid black;}
+        div>img{float: left;}
+        div::after{content: ""; display: block; clear: both;}
+    </style>
+</head>
+<body>
+    <section>
+        <article class="ex01"></article>
+        <article class="ex02"></article> 
+        <article class="ex03"></article>
+        <article class="ex04"></article>
+        <article class="ex05"></article>
+        <!-- 
+            clear="both" 를 넣기위해 억지러 넣은 요소
+            <p class="ex06"></p> -->
+    </section>
+    <div><img src="../images/car.jpg" alt="">이 자동차는 어쩌구 저쩌구 이러쿵 저렁쿵 이래저래 이 자동차는 어쩌구 저쩌구 이러쿵 저렁쿵 이래저래 이 자동차는 어쩌구 저쩌구 이러쿵 저렁쿵 이래저래이 자동차는 어쩌구 저쩌구 이러쿵 저렁쿵 이래저래</div>
+</body>
+</html>
+
+<!-- article 만 float : left 해주면 section 점선이 자식들을 감싸지 못한다 외냐하면 자식들은 지금 화면에서 한층나와있다고 생각하면편하다.
+section 이 지금 자식 의 높이를 못찾아서 점선이 article 을 못 감싸는것이다. 
+clear 라는게 float 애들을 다시 안으로 넣어주는것이다. 
+위 방법은 억지로 하나의 데이터를 더넣은것이여서 바람직한 방법이아니다.
+
+section::after{content: ""; display: block; clear : both } 로 하나의 요소를 넣지않고 css만으로 해결할수 있다.
+    -->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_css13_position_absolute.html</title>
+    <style>
+        /* relative 는 static의 위치를 기준으로 함. */
+        div{width: 100px; height: 100px;}
+        .ex01{background: turquoise; position: relative; top: 0; left: 0;}
+        .ex02{background: violet; position: relative; left: 50px;}
+        .ex03{background: yellow; position: relative; top: 100px; left: 200px;} 
+        .ex04{background: yellowgreen; width: 200px; height: 200px; position: relative;}
+        .ex05{background: tomato; position: absolute; top: 50px; left: 50px;}
+        /* absolute 는 static 을 제외한 부모만 인정한다.(부모의 위치를 기준으로 한다) */
+    </style>
+    <!-- absolute 를 하게되면 위치를 조정할수 있게된다. -->
+</head>
+<body>
+
+    <div class="ex01"></div> 
+    <div class="ex02"></div>
+    <div class="ex03"></div>
+    <div class="ex04">
+        <div class="ex05"></div>
+    </div>
+
+</body>
+</html>

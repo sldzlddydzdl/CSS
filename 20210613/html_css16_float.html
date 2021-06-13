@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_css16_float.html</title>
+    <style>
+        div{width: 100px; height: 100px;}
+        div.ex01{background: chocolate; float: left;}
+        div.ex02{background: brown; float: left;}
+        div.ex03{background: black; float: left;}
+        div.ex04{width: 150px; height: 150px; background: red;}
+        div.clear{clear: left;
+        }
+        section{width: 500px; border: 1px dotted red; }
+        section>img{float: left;}
+
+        article{width: 300px; height: 200px; background: grey; border: 2px solid blue;}
+        p{clear: both;}
+    </style>
+</head>
+<body>
+    <h1>물에 떠서 옆으로 밀착되는 효과</h1>
+    <div class="ex01"></div>
+    <div class="ex02"></div>
+    <div class="ex03"></div>
+    <div class="clear"></div>
+    <div class="ex04"></div>
+    <hr>
+    <section>
+        <img src="../images/car.jpg" alt="자동차">
+        이 자동차는 아주 어쩌구 저쩌구 이렁쿵 저러쿵 이 자동차는 아주 어쩌구 저쩌구 이렁쿵 저러쿵 이 자동차는 아주 어쩌구 저
+        <p></p>
+    </section>
+    <article></article>
+</body>
+</html>
+
+
+<!-- float 되어있는애난 밑에 무조건 clear 되어있어야 한다. -->
