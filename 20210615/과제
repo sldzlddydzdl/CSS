@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_css_실습_naver_tv연예</title>
+    <style>
+        .whole01{width: 750px; height: 131px; float: left; position: relative;}
+        .whole02{width: 630px; height: 131px; float: left; position: relative; margin-top: 50px;}
+
+        .bts{float: left;}
+        .bts02{float: left;}
+
+        .title{float: left; font-weight: bolder; font-size: 14px; position: absolute; left: 160px;}
+        .title02{float: left; font-weight: bolder ; font-size: 14px; position: absolute;left: 160px; ;}
+
+        .subtitle{float: left; font-size: 12px; position: absolute; position: absolute; left: 160px; top: 20px}
+        .subtitle02{float: left; font-size: 12px; position: absolute; position: absolute; left: 160px; top: 20px }
+        .bottom{float: left;font-size: 11px; position: absolute; left: 160px; top: 71px;}
+        .bottom02{float: left; font-size: 11px; position: absolute; left: 160px; top: 74px;}
+        p{clear: both;}
+    </style>
+</head>
+<body>
+    <div class="whole01">
+        <div class="bts"><img src="../images/bts.PNG" alt=""> </div>
+        <div class="title">방탄소년단 지민, 내 남자친구라고 상상만해도 기분이 날아갈 것 같은 스타 1위 선정</div>
+        <div class="subtitle">세계적 인기 보이그룹 방탄소년단(BTS) 멤버 지민이 '내 남자친구라고 상상만해도 기분이 날아갈 것 같은 스타’ 1위에 선정됐다.
+            지민은 지난 6일부터 12일까지 총 7일간 '익사이...</div>
+        <div class="bottom">텐아시아</div>
+        <p></p>
+    </div>
+    
+    <div class="whole02">
+        <div class="bts02"><img src="../images/welcom.PNG" alt=""></div>
+        <div class="title02">[단독] 박서준, '캡틴마블2' 합류.. 마동석 , 윤여정, 봉준호 영화인 위상</div>
+        <div class="subtitle02">배우 박서준이 마동석에 이어 마블영화에 합류. 한국배우들이 마블시네마틱유니버스(MCU) 에서 활약하는 모습을연이어 보게 됐다. 15일 영화계에 따르면 박서준은 최근 '더 마블스'로....</div>
+        <div class="bottom02">스타뉴스</div>    
+        <p></p>
+    </div>
+</body>
+</html>
